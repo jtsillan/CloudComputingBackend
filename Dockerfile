@@ -10,7 +10,7 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 # Use --no-cache-dir to prevent caching cause issues
 # Use --progresss-bar off due to bug in Docker image deployment beeing singlethread --> progress bar is multithread
-RUN pip install --no-cache-dir --progresss-bar off -r requirements.txt
+RUN pip install --no-cache-dir --progress-bar off -r requirements.txt
 
 # Make port available to the world outside this container
 EXPOSE 8080
